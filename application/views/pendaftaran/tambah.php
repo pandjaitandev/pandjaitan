@@ -70,7 +70,7 @@
               <label>Email</label>
               <div class="input-group mb-3">
                 <div class="input-group-append"><div class="input-group-text"><span class="fas fa-envelope"></span></div></div>
-                <input type="email" class="form-control" name="email" placeholder="Ex: official.bikinkarya@gmail.com" value="<?= set_value('email');?>" minlength="8" maxlenght="50" required>
+                <input type="email" class="form-control" name="email" placeholder="Ex: pc.pmiikotamalang@gmail.com" value="<?= set_value('email');?>" minlength="8" maxlenght="50" required>
               </div>                            
               <?php echo form_error('email')?>                        
             </div>
@@ -118,7 +118,7 @@
               <label>Alamat Asal Lengkap</label><small> (Sesuai KTP)</small>
               <div class="input-group mb-3">
                 <div class="input-group-append"><div class="input-group-text"><span class="fas fa-user-plus"></span></div></div>
-                <input type="text" class="form-control" name="domisili" placeholder="Ex: Jl. Semarang No. 5, Sumbersari, Klojen, Kota Malang"  minlength="30" maxlenght="100" value="<?= set_value('domisili');?>" required>
+                <input type="text" class="form-control" name="domisili" placeholder="Ex: Jl. Mayjen Pandjaitan No. 164, Kec. Penanggungan, Kota Malang"  minlength="30" maxlenght="100" value="<?= set_value('domisili');?>" required>
               </div>                            
               <?php echo form_error('domisili')?>                        
             </div>
@@ -133,14 +133,14 @@
             <div class="form-group">
               <div class="input-group mb-3">
                 <div class="input-group-append"><div class="input-group-text"><span class="fab fa-facebook"></span></div></div>
-                <input type="text" class="form-control" name="fb" placeholder="Ex: Fitrah Izul Falaq"  minlength="5" maxlenght="30" value="<?= set_value('fb');?>" required>
+                <input type="text" class="form-control" name="fb" placeholder="Ex: Sai Yusuf"  minlength="5" maxlenght="30" value="<?= set_value('fb');?>" required>
               </div>                            
               <?php echo form_error('fb')?>                        
             </div>
             <div class="form-group">
               <div class="input-group mb-3">
                 <div class="input-group-append"><div class="input-group-text"><span class="fab fa-twitter"></span></div></div>
-                <input type="text" class="form-control" name="twitter" placeholder="Ex: fitrahizulfalaq"  minlength="5" maxlenght="30" value="<?= set_value('twitter');?>">
+                <input type="text" class="form-control" name="twitter" placeholder="Ex: zulaibam.h.ali"  minlength="5" maxlenght="30" value="<?= set_value('twitter');?>">
               </div>                            
               <?php echo form_error('twitter')?>                        
             </div>
