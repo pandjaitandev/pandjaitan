@@ -72,7 +72,8 @@ class Anggota extends CI_Controller {
 
 	//PERINTAH EKSEKUSI DATA
 	function hapus(){
-	  $previllage = 2;
+	  $previllage = 4;
+	  $this->session->set_flashdata('warning','Hanya admin yang bisa menghapus');
 	  check_super_user($this->session->tipe_user,$previllage);
 	  	
 	  $id = $this->uri->segment(3);

@@ -11,12 +11,12 @@ class Pendaftaran extends CI_Controller {
 	// LOAD DATA AJA
 	public function index(){
 		check_not_login();
-		redirect('pendaftaran/pendaftaran_data');
+		redirect('pendaftaran/data/');
 	}
 
 	public function data()
 	{	
-		$previllage = 2;
+		$previllage = 4;
 		check_super_user($this->session->tipe_user,$previllage);	
 		$data['menu'] = "Data Pendaftar";
 		$data['header_script'] = "pendaftaran_header";

@@ -97,17 +97,20 @@
                 <a href="<?=site_url('anggota')?>" class="nav-link <?=$this->uri->segment(1) == 'anggota' ? "active" : ""?>"><i class="nav-icon fas fa-database"></i><p>Data Anggota</p></a>
               </li>
             </ul>
+            <?php if ($this->session->tipe_user < 4) {} else { ?>
             <ul class="nav nav-treeview">              
               <li class="nav-item">            
                 <a href="<?=site_url('pendaftaran/data/')?>" class="nav-link <?=$this->uri->segment(1) == 'pendaftaran' ? "active" : ""?>">
                 <i class="nav-icon fas fa-book"></i><p>Data Pendaftaran</p></a>
               </li>
             </ul>
+            <?php } ?>
           </li>
           <li class="nav-item">
             <a href="<?=base_url("statistik")?>" class="nav-link <?=$this->uri->segment(1) == 'statistik' ? "active" : ""?>">
             <i class="nav-icon fas fa-home"></i><p>Statistik</p></a>            
           </li>
+          <?php if ($this->session->tipe_user < 4) {} else { ?>
           <li class="nav-header">ADMIN</li>
           <li class="nav-item has-treeview">
             <a href="#" class="nav-link <?=$this->uri->segment(1) == 'komisariat' || $this->uri->segment(1) == "rayon" ? "active" : ""?>"><i class="nav-icon fas fa-users"></i><p>Master Data<i class="right fas fa-angle-down"></i></p></a>
@@ -123,6 +126,7 @@
               </li>
             </ul>
           </li>
+          <?php } ?>
           <?php } ?>
         </ul>
       </nav>
