@@ -108,7 +108,11 @@
           </li>
           <li class="nav-item">
             <a href="<?=base_url("statistik")?>" class="nav-link <?=$this->uri->segment(1) == 'statistik' ? "active" : ""?>">
-            <i class="nav-icon fas fa-home"></i><p>Statistik</p></a>            
+            <i class="nav-icon fas fa-chart-bar"></i><p>Statistik</p></a>            
+          </li>
+          <li class="nav-item">
+            <a href="<?=base_url("sk")?>" class="nav-link <?=$this->uri->segment(1) == 'sk' ? "active" : ""?>">
+            <i class="nav-icon fas fa-list"></i><p>Pengajuan SK</p></a>            
           </li>
           <?php if ($this->session->tipe_user < 4) {} else { ?>
           <li class="nav-header">ADMIN</li>

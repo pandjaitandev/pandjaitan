@@ -74,6 +74,19 @@
           </a>
         </div>
       </div>
+      <!-- Menu-->
+      <div class="col-lg-2 col-4">        
+        <div class="small-box bg-white">
+          <div class="inner text-center">
+            <a href="<?= base_url('sk')?>">
+            <img src="<?= base_url("")?>/assets/dist/img/sk.png" alt="" width="100%">
+            </a>
+          </div>          
+          <a href="<?= base_url('sk')?>" class="small-box-footer">
+            Pengajuan SK
+          </a>
+        </div>
+      </div>
       <?php } ?>
       <div class="col-lg-2 col-4">        
         <!-- small card -->
