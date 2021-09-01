@@ -116,6 +116,10 @@
           </li>
           <?php if ($this->session->tipe_user < 4) {} else { ?>
           <li class="nav-header">ADMIN</li>
+          <li class="nav-item">
+            <a href="<?=base_url("ideologis")?>" class="nav-link <?=$this->uri->segment(1) == 'ideologis' ? "active" : ""?>">
+            <i class="nav-icon fas fa-fire"></i><p>Tugas Ideologis</p></a>            
+          </li>
           <li class="nav-item has-treeview">
             <a href="#" class="nav-link <?=$this->uri->segment(1) == 'komisariat' || $this->uri->segment(1) == "rayon" ? "active" : ""?>"><i class="nav-icon fas fa-users"></i><p>Master Data<i class="right fas fa-angle-down"></i></p></a>
             <ul class="nav nav-treeview">              
