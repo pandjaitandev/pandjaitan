@@ -16,7 +16,7 @@
             <br>
             <div class="text-left">
               <h5>
-                E-UPT Pelatihan Dinas Koperasi dan UKM Provinsi Jawa Timur merupakan sebuah platform untuk menghubungkan setiap pegawai dalam satu portal, sehingga akan lebih mempermudah pengelolaan dan manajamen kedepannya. 
+                E-Movement Apps dipelopori oleh Pengurus PC PMII Kota Malang Periode 2021-2021. Aplikasi ini dikembangkan secara mandiri dan independent untuk transformasi organisasi. E-Movement ini nanti mencakup database, e-kaderisasi, dan pengembangan bakat dan minat kader PMII Kota Malang. 
               </h5>
             </div>
 
