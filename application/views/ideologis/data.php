@@ -31,7 +31,7 @@
                 $no = 1;
                 foreach ($row->result() as $key => $data) {;
               ?>
-              <tr <?= date("ymd",strtotime($data->tgl)) < date("ymd") ? 'class="table-danger"' : ""?> <?= $data->pemohon != null ? 'class="table-success"' : ""?>>
+              <tr <?= date("ymd",strtotime($data->tgl)) < date("ymd") ? 'class="table-danger"' : ""?> <?= $data->petugas != null ? 'class="table-success"' : ""?>>
                 <td><?= $no++?></td>                
                 <td><?= date("d-m-y",strtotime($data->tgl))?></td>
                 <td><?= $data->kategori?></td>
