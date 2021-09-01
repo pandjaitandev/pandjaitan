@@ -25,6 +25,20 @@ class Anggota_m extends CI_Model {
 		$query = $this->db->get();
 		return $query;
 	}
+
+	public function getAdmin($tipe_user = null) 
+	{
+		$this->db->from('tb_user');
+		if ($tipe_user != null) {
+			$this->db->where('tipe_user',$tipe_user);
+		}
+		$this->db->where('tipe_user >','1');
+		$this->db->where('tipe_user <','4');
+		$this->db->order_by("komisariat_id","asc");
+		$this->db->order_by("created","asc");
+		$query = $this->db->get();
+		return $query;
+	}
 	
 	function simpan($post)
 	{

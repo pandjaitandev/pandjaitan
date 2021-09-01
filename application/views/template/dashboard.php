@@ -133,6 +133,12 @@
                 <i class="nav-icon fas fa-book"></i><p>Rayon</p></a>
               </li>
             </ul>
+            <ul class="nav nav-treeview">              
+              <li class="nav-item">            
+                <a href="<?=site_url('anggota/admin')?>" class="nav-link <?=$this->uri->segment(2) == 'admin' ? "active" : ""?>">
+                <i class="nav-icon fas fa-users"></i><p>Admin</p></a>
+              </li>
+            </ul>
           </li>
           <?php } ?>
           <?php } ?>

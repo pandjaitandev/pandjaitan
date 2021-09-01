@@ -25,6 +25,17 @@ class Anggota extends CI_Controller {
 		$this->templateadmin->load('template/dashboard','anggota/data',$data);
 	}
 
+	public function admin()
+	{	
+		$previllage = 4;
+		check_super_user($this->session->tipe_user,$previllage);	
+		$data['menu'] = "Data Admin";
+		$data['header_script'] = "anggota_header";
+		$data['footer_script'] = "anggota_footer";
+		$data['row'] = $this->anggota_m->getAdmin();
+		$this->templateadmin->load('template/dashboard','anggota/data_admin',$data);
+	}
+
 	public function detail()
 	{	
 		$previllage = 2;
