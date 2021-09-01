@@ -54,3 +54,4 @@ $route['404_override'] = 'dashboard';
 $route['daftar'] = 'pendaftaran/tambah/';
 $route['translate_uri_dashes'] = FALSE;
 $route['login'] = 'auth/login';
+$route['baiat'] = 'ideologis/tambah';
