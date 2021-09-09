@@ -44,10 +44,24 @@
             Rayon
           </a>
         </div>
+      </div>
+      <!-- Menu-->
+      <div class="col-lg-2 col-4">        
+        <!-- small card -->
+        <div class="small-box bg-white">
+          <div class="inner text-center">
+            <a href="<?= base_url('pendaftaran/data/')?>">
+            <img src="<?= base_url("")?>/assets/dist/img/pendaftaran.png" alt="" width="100%">
+            </a>
+          </div>          
+          <a href="<?= base_url('pendaftaran/data/')?>" class="small-box-footer">
+            Pendaftar
+          </a>
+        </div>
       </div>    
       <?php } ?>
       <?php if ($this->session->tipe_user < 2) { } else { ?>
-        <!-- Menu-->
+      <!-- Menu-->
       <div class="col-lg-2 col-4">        
         <!-- small card -->
         <div class="small-box bg-white">
