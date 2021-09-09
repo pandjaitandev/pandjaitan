@@ -8,7 +8,7 @@ class Anggota_m extends CI_Model {
 		$this->db->from('tb_user');
 		if ($id != null) {
 			$this->db->where('id',$id);
-		}
+		}		
 		$query = $this->db->get();
 		return $query;
 	}
@@ -22,6 +22,7 @@ class Anggota_m extends CI_Model {
 		} elseif ($tipe_user == "3") {
 			$this->db->where('komisariat_id',$komisariat_id);
 		}
+		$this->db->where('tipe_user <','3');
 		$query = $this->db->get();
 		return $query;
 	}
