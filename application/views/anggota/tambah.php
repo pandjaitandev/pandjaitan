@@ -48,6 +48,7 @@
                   foreach ($this->fungsi->pilihan("tb_rayon")->result() as $key => $pilihan) {;
                 ?>
                 <option value="<?= $pilihan->id?>"><?= $pilihan->deskripsi?></option>
+                <?php } ?>
               </select>                
               <?php echo form_error('rayon_id')?>
             </div>
