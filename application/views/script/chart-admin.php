@@ -28,6 +28,7 @@
                 } elseif ($this->session->tipe_user == 2) {
                   $this->db->where("rayon_id",$this->session->rayon_id);
                 }
+                $this->db->where("tipe_user <",'3');
                 echo $this->fungsi->hitung_rows("tb_user","kelamin","Laki - Laki")?>,
               <?php 
                 if ($this->session->tipe_user == 3) {
@@ -35,6 +36,7 @@
                 } elseif ($this->session->tipe_user == 2) {
                   $this->db->where("rayon_id",$this->session->rayon_id);
                 }
+                $this->db->where("tipe_user <",'3');
                 echo $this->fungsi->hitung_rows("tb_user","kelamin","Perempuan")?>,
             ]
         }]
@@ -88,6 +90,7 @@
                 } elseif ($this->session->tipe_user == 2) {
                   $this->db->where("rayon_id",$this->session->rayon_id);
                 }
+                $this->db->where("tipe_user <",'3');
                 echo $this->fungsi->hitung_rows("tb_user","jenis","kader")?>,
               <?php 
                 if ($this->session->tipe_user == 3) {
@@ -95,6 +98,7 @@
                 } elseif ($this->session->tipe_user == 2) {
                   $this->db->where("rayon_id",$this->session->rayon_id);
                 }
+                $this->db->where("tipe_user <",'3');
                 echo $this->fungsi->hitung_rows("tb_user","jenis","alumni")?>,
 
             ]
@@ -161,6 +165,7 @@
                     } elseif ($this->session->tipe_user == 2) {
                       $this->db->where("rayon_id",$this->session->rayon_id);
                     }
+                    $this->db->where("tipe_user <",'3');
                     echo "'" . $this->fungsi->pilihan_advanced("tb_user","provinsi",$data->id)->num_rows() ."',";
                   }
               ?>
