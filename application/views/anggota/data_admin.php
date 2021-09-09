@@ -33,7 +33,7 @@
                   <?= $data->tipe_user == '2' ? '<span class="badge badge-info">Rayon</span>' : '<span class="badge badge-warning">Komisariat</span>'?></span>
                 </td>
                 <td scope="row">
-                  <p> <?= $data->nama?> <br> <small><?= $data->nik?></small> </p>                  
+                  <p> <?= $data->nama?> <br> <small><?= $data->email?></small> </p>                  
                 </td>
                 <td>
                   <?= $this->fungsi->get_deskripsi("tb_komisariat",$data->komisariat_id) ?> / <?= $this->fungsi->get_deskripsi("tb_rayon",$data->rayon_id) ?>
