@@ -44,8 +44,8 @@
                 </td>
                 <td>                    
                   <a href="<?= site_url('anggota/detail/'.$data->id);?>" class="btn btn-sm btn-secondary"><i class='fas fa-list'></i></a>
-                  <a href="<?= site_url('anggota/edit/'.$data->id);?>" class="btn btn-sm btn-info"><i class='fas fa-edit'></i></a>
                   <?php if ($this->session->tipe_user > 3) { ?>
+                  <a href="<?= site_url('anggota/edit/'.$data->id);?>" class="btn btn-sm btn-info"><i class='fas fa-edit'></i></a>
                   <a href="<?= site_url('anggota/hapus/'.$data->id);?>" class="btn btn-sm btn-danger" onclick="return confirm('Apakah yakin mau dihapus?')"><i class='fas fa-trash'></i></a>
                   <?php } ?>
                 </td>
