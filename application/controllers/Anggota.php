@@ -22,7 +22,7 @@ class Anggota extends CI_Controller {
 		$data['menu'] = "Data Anggota";
 		$data['header_script'] = "anggota_header";
 		$data['footer_script'] = "anggota_footer";
-		$this->db->where('tipe_user <','2');
+		$this->db->where('tipe_user','1');
 		$data['row'] = $this->anggota_m->getPendaftar($this->session->tipe_user,$this->session->komisariat_id,$this->session->rayon_id);
 		$this->templateadmin->load('template/dashboard','anggota/data',$data);
 	}
