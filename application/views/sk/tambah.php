@@ -42,7 +42,7 @@
             <div class="form-group">
               <label>File</label>
               <input type="file" class="form-control" accept=".doc,.docx,.pdf,.ppt,.pptx" name="file" required="">
-              <small>Maksimal ukuran file 4 Mb</small>                     
+              <small>Maksimal ukuran file 4 Mb. Gabungkan File dan COmpress ukurannya di <a href="https://www.ilovepdf.com/">https://www.ilovepdf.com/</a></small>                     
             </div>                                    
             <div class="form-check">
               <input type="checkbox" class="form-check-input" required>
