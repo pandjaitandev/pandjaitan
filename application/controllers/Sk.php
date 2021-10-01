@@ -76,7 +76,7 @@ class Sk extends CI_Controller {
         //CEK GAMBAR
         $config['upload_path']          = 'assets/dist/files/sk/';
         $config['allowed_types']        = 'pdf';
-        $config['max_size']             = 5000;
+        $config['max_size']             = 9000;
         $config['file_name']            = uniqid();
 
 				$this->load->library('upload', $config);
@@ -137,7 +137,7 @@ class Sk extends CI_Controller {
         //CEK GAMBAR
         $config['upload_path']          = 'assets/dist/files/sk/';
         $config['allowed_types']        = 'pdf';
-        $config['max_size']             = 5000;
+        $config['max_size']             = 9000;
         $config['file_name']            = uniqid();
 
 				$this->load->library('upload', $config);
@@ -198,7 +198,7 @@ class Sk extends CI_Controller {
         //CEK GAMBAR
         $config['upload_path']          = 'assets/dist/files/sk/';
         $config['allowed_types']        = 'pdf';
-        $config['max_size']             = 5000;
+        $config['max_size']             = 9000;
         $config['file_name']            = uniqid();
 
 				$this->load->library('upload', $config);
