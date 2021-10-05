@@ -87,7 +87,7 @@ class Pendaftaran extends CI_Controller {
 	  $id = $this->uri->segment(3);
 	  $this->pendaftaran_m->acc($id);
 	  $this->session->set_flashdata('success','Berhasil Di ACC');
-	  redirect('pendaftaran/pendaftaran/data/');
+	  redirect('pendaftaran/data/');
 	}
 
 }
