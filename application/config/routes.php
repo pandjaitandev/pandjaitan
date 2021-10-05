@@ -55,3 +55,4 @@ $route['daftar'] = 'pendaftaran/tambah/';
 $route['translate_uri_dashes'] = FALSE;
 $route['login'] = 'auth/login';
 $route['baiat'] = 'ideologis/tambah';
+$route['stats'] = 'publik/statistik';
