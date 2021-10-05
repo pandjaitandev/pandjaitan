@@ -13,6 +13,13 @@ class Publik extends CI_Controller {
 		$data['menu'] = "About Apps";
 		$this->templateadmin->load('template/publik','page/landing_publik',$data);
 	}
+
+	public function statistik()
+	{
+		$data['menu'] = "Statistik Data";
+		$data['footer_script'] = "chart-stats";
+		$this->templateadmin->load('template/publik','statistik/statistik_publik',$data);
+	}
 	
 
 

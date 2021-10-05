@@ -6,7 +6,6 @@
       <div class="card-header">
         <a href="<?=base_url('');?>" class="btn btn-info float-right btn-sm"><i class="fas fa-backward"></i> Kembali</a>          
       </div>  
-
       <div class="card">
         <div class="card-header bg-info">
           <h3 class="card-title"><?=$menu?></h3>
@@ -17,6 +16,7 @@
             <thead>
             <tr>
               <th>Identitas</th>
+              <th>Komisariat</th>
               <th>#</th>
             </tr>
             </thead>
@@ -30,6 +30,9 @@
                   <p> <small><?= $data->nik?></small> <br> <?= $data->nama?><br>
                   <?= $data->jenis = 'kader' ? '<span class="badge badge-info">Kader</span>' : '<span class="badge badge-success">Alumni</span>'?></span> <small><a href="http://wa.me/+62<?= $data->hp?>"><i class="fab fa-whatsapp"></i> +62 <?= $data->hp?></a></small><br>
                   </p>                  
+                </td>
+                <td>
+                  <?= $this->fungsi->get_deskripsi("tb_komisariat",$data->komisariat_id) ?>
                 </td>                
                 <td>                    
                   <a href="<?= site_url('pendaftaran/detail/'.$data->id);?>" class="btn btn-sm btn-info"><i class='fas fa-list'></i></a>
