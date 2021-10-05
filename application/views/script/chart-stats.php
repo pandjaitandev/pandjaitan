@@ -264,19 +264,19 @@
     data: {
         labels: [
           <?php
-            for ($i=2010; $i<=date('Y') ; $i++) {
+            for ($i=date("Y")-10; $i<=date('Y') ; $i++) {
               echo "'" . $i ."',";
             }
           ?>          
         ],
 
         datasets: [{
-            label: 'Persebaran Kader Per Tahun',
+            label: 'Kader Per 10 Tahun Terakhir',
             borderColor: 'red',
             fill: false,
             data: [
               <?php
-                  for ($i=2010; $i<=date('Y') ; $i++) {
+                  for ($i=date("Y")-10; $i<=date('Y') ; $i++) {
                     $this->db->where("tipe_user",'1');
                     echo "'" . $this->fungsi->pilihan_advanced("tb_user","angkatan",$i)->num_rows() ."',";
                   }                  
