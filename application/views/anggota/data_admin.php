@@ -4,7 +4,7 @@
     <div class="col-12">     
     <div class="col-12">     
       <div class="card-header">
-        <a href="<?=base_url('anggota/tambah/');?>" class="btn btn-success btn-sm"><i class="fas fa-plus"></i> Tambah</a>          
+        <a href="<?=base_url('anggota/addAdmin/');?>" class="btn btn-success btn-sm"><i class="fas fa-plus"></i> Tambah</a>          
         <a href="<?=base_url('');?>" class="btn btn-info float-right btn-sm"><i class="fas fa-backward"></i> Kembali</a>          
       </div>  
 

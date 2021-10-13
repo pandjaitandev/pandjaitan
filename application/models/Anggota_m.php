@@ -77,6 +77,27 @@ class Anggota_m extends CI_Model {
 	  $this->db->insert('tb_user',$params);
 	}
 
+	function addAdmin($post)
+	{
+	  //Data Komisariat
+	  $params['id'] =  "";
+	  $params['no_anggota'] =  date("YMD");
+	  $params['username'] =  $post['email'];
+	  $params['password'] =  sha1($post['email']);
+	  $params['email'] =  $post['email'];
+	  $params['komisariat_id'] =  $post['komisariat_id'];
+	  $params['rayon_id'] =  $post['rayon_id'];
+	  $params['nama'] =  $post['nama'];
+	  $params['jenis'] =  'kader';
+	  $params['created'] =  date("Y:m:d:h:i:sa");
+
+	  //Tambahan
+	  $params['status'] = "1";
+	  $params['tipe_user'] = "2";
+
+	  $this->db->insert('tb_user',$params);
+	}
+
 
 	function hapus($id){
 	  $this->db->where('id', $id);

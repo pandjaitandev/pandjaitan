@@ -190,4 +190,37 @@ class Anggota extends CI_Controller {
     redirect('anggota/edit/'.$id);   
 	}
 
+	// FORM EKSEKUSI
+	public function addAdmin()
+	{	
+		//Load librarynya dulu
+		$this->load->library('form_validation');
+		//Atur validasinya
+		$this->form_validation->set_rules('nik', 'nik', 'min_length[3]|is_unique[tb_user.nik]|is_unique[tb_user_tmp.nik]|max_length[20]|alpha_dash');
+		$this->form_validation->set_rules('email', 'email', 'min_length[3]|is_unique[tb_user.email]|is_unique[tb_user_tmp.email]');
+		$this->form_validation->set_rules('hp', 'hp', 'min_length[3]|is_unique[tb_user.hp]|is_unique[tb_user_tmp.hp]|max_length[20]|alpha_dash');
+
+		//Pesan yang ditampilkan
+		$this->form_validation->set_message('min_length', '{field} Setidaknya  minimal {param} karakter.');
+		$this->form_validation->set_message('max_length', '{field} Seharusnya maksimal {param} karakter.');
+		$this->form_validation->set_message('is_unique', 'Data sudah ada');
+		$this->form_validation->set_message('alpha_dash', 'Gak Boleh pakai Spasi');
+		//Tampilan pesan error
+		$this->form_validation->set_error_delimiters('<span class="badge badge-danger">', '</span>');
+
+		if ($this->form_validation->run() == FALSE) {
+			$data['menu'] = "Tambah Admin PMII";
+			$data['footer_script'] = "pendaftaran";
+			$this->templateadmin->load('template/dashboard','anggota/add_admin',$data);
+	    } else {
+	        $post = $this->input->post(null, TRUE);	        
+	        $this->anggota_m->addAdmin($post);
+
+	        if ($this->db->affected_rows() > 0) {
+	        	$this->session->set_flashdata('success','Admin Berhasil Ditambahkan');
+	        }	
+	        redirect('anggota/addAdmin');	        	
+	    }
+	}
+
 }
