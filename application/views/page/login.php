@@ -43,7 +43,7 @@
   <div class="card">
     <div class="card-body login-card-body rounded-circle">
       <div class="login-logo">
-        <a href="<?=base_url()?>"><img src="<?=base_url()?>/assets/dist/img/login-logo.png" alt="Logo Aplikasi"></a>
+        <a href="https://emovement.or.id"><img src="<?=base_url()?>/assets/dist/img/login-logo.png" alt="Logo Aplikasi"></a>
       </div>
       <hr>
       <p class="text-center">Masukkan Email dan Password</p>
