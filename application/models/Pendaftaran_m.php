@@ -43,6 +43,7 @@ class Pendaftaran_m extends CI_Model {
 	  $params['kecamatan'] =  $post['kecamatan'];
 	  $params['kelurahan'] =  $post['kelurahan'];
 	  $params['domisili'] =  $post['domisili'];	  
+	  $params['rumpun'] =  $post['rumpun'];	  
 	  $params['ig'] =  $post['ig'];	  
 	  $params['fb'] =  $post['fb'];	  
 	  $params['twitter'] =  $post['twitter'];	  
@@ -86,6 +87,7 @@ class Pendaftaran_m extends CI_Model {
 			$params['kecamatan'] =  $datapendaftar->kecamatan;
 			$params['kelurahan'] =  $datapendaftar->kelurahan;
 			$params['domisili'] =  $datapendaftar->domisili;	  
+			$params['rumpun'] =  $datapendaftar->rumpun;
 			$params['angkatan'] =  $datapendaftar->angkatan;
 			$params['ig'] =  $datapendaftar->ig;
 			$params['fb'] =  $datapendaftar->fb;

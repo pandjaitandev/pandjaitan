@@ -123,6 +123,18 @@
               <?php echo form_error('domisili')?>                        
             </div>
             <div class="form-group">
+              <label>Rumpun Ilmu</label>
+              <select name="rumpun" class="form-control select2" id="komisariat_id" required>
+                <option value="<?= set_value('rumpun');?>">Pilihan : </option>
+                <?php
+                  foreach ($this->fungsi->pilihan("ls_rumpun")->result() as $key => $pilihan) {;
+                ?>
+                <option value="<?= $pilihan->id?>"><?= $pilihan->deskripsi?></option>
+                <?php }?>
+              </select>
+              <?php echo form_error('rumpun')?>
+            </div>
+            <div class="form-group">
               <label>Sosial Media</label>
               <div class="input-group mb-3">
                 <div class="input-group-append"><div class="input-group-text"><span class="fab fa-instagram"></span></div></div>
